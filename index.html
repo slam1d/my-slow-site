@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учебный сайт — Практика 2</title>
+
+  <!-- Шрифты Google: без preconnect, без display=swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Блокирующий CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Блокирующий скрипт в head -->
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Природа России</h1>
+      <p class="subtitle">Учебный макет для практики по ускорению загрузки сайтов</p>
+      <a href="#gallery" class="btn">Смотреть галерею</a>
+    </div>
+  </header>
+
+  <section class="intro container">
+    <h2>О проекте</h2>
+    <p>
+      Эта страница создана специально для практического занятия. Здесь есть тяжёлые изображения,
+      блокирующие скрипты и большой CSS-файл — всё то, что замедляет загрузку. Задача —
+      найти узкие места и оптимизировать их.
+    </p>
+    <p>
+      После внесения правок страница должна загружаться быстрее, а метрики LCP, CLS, TBT
+      и Speed Index — улучшиться.
+    </p>
+  </section>
+
+  <section id="gallery" class="gallery container">
+    <h2>Галерея</h2>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=2400&q=100" alt="Горы">
+      <h3>Горы</h3>
+      <p>Кавказ, Алтай, Урал — самые живописные вершины страны.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=2000&q=100" alt="Лес">
+      <h3>Лес</h3>
+      <p>Тайга занимает большую часть территории России.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=2000&q=100" alt="Тропа в лесу">
+      <h3>Тропы</h3>
+      <p>Пешие маршруты для любителей спокойного отдыха.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=2000&q=100" alt="Озеро">
+      <h3>Озёра</h3>
+      <p>Байкал, Ладога, Селигер — чистая вода и тишина.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=2000&q=100" alt="Закат">
+      <h3>Закаты</h3>
+      <p>Летние вечера вдали от города.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=2000&q=100" alt="Поле">
+      <h3>Поля</h3>
+      <p>Бескрайние просторы средней полосы.</p>
+    </article>
+  </section>
+
+  <footer class="container">
+    <p>&copy; 2026 Учебный макет. Практическое занятие 2.</p>
+  </footer>
+
+</body>
+</html>
