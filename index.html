@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Учебный сайт — Практика 2</title>
 
-  <!-- Шрифты Google: без preconnect, без display=swap -->
+  <!-- Preconnect к Google Fonts: убирает задержку установки соединения -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Блокирующий CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Минифицированный CSS -->
+  <link rel="stylesheet" href="style.min.css">
 
-  <!-- Блокирующий скрипт в head -->
-  <script src="app.js"></script>
+  <!-- Скрипт отложен: скачивается параллельно, не блокирует рендеринг -->
+  <script src="app.min.js" defer></script>
 </head>
 <body>
 
@@ -41,37 +43,37 @@
     <h2>Галерея</h2>
 
     <article class="card">
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=2400&q=100" alt="Горы">
+      <img src="mountains.webp" width="800" height="533" alt="Горы" loading="lazy" decoding="async">
       <h3>Горы</h3>
       <p>Кавказ, Алтай, Урал — самые живописные вершины страны.</p>
     </article>
 
     <article class="card">
-      <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=2000&q=100" alt="Лес">
+      <img src="forest.webp" width="800" height="477" alt="Лес" loading="lazy" decoding="async">
       <h3>Лес</h3>
       <p>Тайга занимает большую часть территории России.</p>
     </article>
 
     <article class="card">
-      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=2000&q=100" alt="Тропа в лесу">
+      <img src="trail.webp" width="800" height="533" alt="Тропа в лесу" loading="lazy" decoding="async">
       <h3>Тропы</h3>
       <p>Пешие маршруты для любителей спокойного отдыха.</p>
     </article>
 
     <article class="card">
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=2000&q=100" alt="Озеро">
+      <img src="lake.webp" width="800" height="533" alt="Озеро" loading="lazy" decoding="async">
       <h3>Озёра</h3>
       <p>Байкал, Ладога, Селигер — чистая вода и тишина.</p>
     </article>
 
     <article class="card">
-      <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=2000&q=100" alt="Закат">
+      <img src="sunset.webp" width="800" height="534" alt="Закат" loading="lazy" decoding="async">
       <h3>Закаты</h3>
       <p>Летние вечера вдали от города.</p>
     </article>
 
     <article class="card">
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=2000&q=100" alt="Поле">
+      <img src="field.webp" width="800" height="531" alt="Поле" loading="lazy" decoding="async">
       <h3>Поля</h3>
       <p>Бескрайние просторы средней полосы.</p>
     </article>
