@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://slam1d.github.io/my-slow-site/sitemap.xml
